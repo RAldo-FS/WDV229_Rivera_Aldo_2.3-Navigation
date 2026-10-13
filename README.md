@@ -47,7 +47,7 @@ For this milestone I created a wireframe prototype in Figma.
 <br>
 🌵 Challenges - Week two's primary impediment was time. I fell behind schedule due to personal/work relate challenges. All I can do is keep moving forward. 
 <br>
-🏆 Accomplishments - Aside my time restraints. Assignment 1.4 Exercise 01: Library Tutorial was turned in on time. Began assignment 2.3 right after. 
+🏆 Accomplishments - Aside my time restraints. Assignment 1.4 Exercise 01: Library Tutorial was turned in on time. Began assignment 2.3 right after. Setup my Vite React project and installed my libraries (Chakra UI, React Router, react-simple-star-rating).
 <br>
 🔮 Next Steps - Complete assignment 2.3 Milestone 2: Navigation by midnight today Oct. 13, 2026. 
 
