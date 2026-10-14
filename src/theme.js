@@ -1,6 +1,5 @@
 // These are my custom colors from my "Mocha Latte" palette (coolors.co) used in the Figma design.
 // These match the tokens in my Figma Simple Design System layout.
-// Usage in any Chakra component: bg="brand.taupe" or color="brand.jet"
 import { createSystem, defaultConfig } from '@chakra-ui/react'
 
 export const system = createSystem(defaultConfig, {
