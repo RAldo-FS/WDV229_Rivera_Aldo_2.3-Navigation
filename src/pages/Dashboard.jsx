@@ -18,9 +18,9 @@ function Dashboard() {
 
       <SimpleGrid columns = {{ base: 1, sm: 2, lg: 4 }} gap = {5}>
         {coffees.map((coffee) => (
-          // Each card links to the Tasting Notes (detail) page
-          <Link key = {coffee.name} to = "/tasting-notes" style = {{ textDecoration: 'none' }}>
-            <Box bg = "white" borderRadius = "lg" boxShadow = "sm" p = {3} _hover = {{ boxShadow: 'md' }}>
+          // Each card will link to the Tasting Notes (detail) page
+          <Link key = {coffee.name} to = "/tasting-notes" style = {{ textDecoration: 'none', display: 'block', height: '100%' }}>
+            <Box h = "100%" bg = "white" borderRadius = "lg" boxShadow = "sm" p = {3} _hover = {{ boxShadow: 'md' }}>
               {/* Placeholder image box */}
               <Flex bg = "brand.taupe" h = "120px" borderRadius = "md" align = "center" justify = "center" fontSize = "4xl">
                 ☕
