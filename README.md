@@ -45,36 +45,35 @@ For this milestone I created a wireframe prototype in Figma.
 ### Milestone 2
 ⚙️ Overview - In week 2 I worked on lesson 2.0 Research: MongoDB Or Local Storage. I decided to go with local storage using React Hooks. 
 <br>
-🌵 Challenges - Week two's primary impediment was time. I fell behind schedule due to personal/work relate challenges. All I can do is keep moving forward. 
+🌵 Challenges - Week two's primary impediment was time. I fell behind schedule due to personal/work related challenges. All I can do is keep moving forward. 
 <br>
 🏆 Accomplishments - Aside my time restraints. Assignment 1.4 Exercise 01: Library Tutorial was turned in on time. Began assignment 2.3 right after. Setup my Vite React project and installed my libraries (Chakra UI, React Router, react-simple-star-rating).
 <br>
-🔮 Next Steps - Complete assignment 2.3 Milestone 2: Navigation by midnight today Oct. 13, 2026. 
+🔮 Next Steps - Complete assignment 2.3 Milestone 2: Navigation before midnight today Oct. 13, 2026. After submitting 2.3, move onto Milestone 3 to save coffee entries with local storage, connect my SampleAPI Coffee API to Search, and add the clickable star ratings.
 
 <br>
 
 Please discuss the following:  
 #### Page #1   
-- Name  
-- Purpose   
+- Overview
+- Purpose: Introduces my Coffee Bean Journal app, explaining what the app is for and how it's organized.   
 
 #### Page #2   
-- Name  
-- Purpose   
+- Dashboard  
+- Purpose: This is the home page. Shows a grid of logged coffees with quick glance ratings, and each card links to its Tasting Notes (page).   
 
 #### Page #3   
-- Name  
-- Purpose   
+- Search  
+- Purpose: Lets users look up coffee drinks by name or ingredient. For Milestone 3, the results will come from the SampleAPIs Coffee API.  
 
 #### Page #4   
-- Name  
-- Purpose   
+- Tasting Notes  
+- Purpose: The detail page for one coffee. Shows its description, ingredients, rating, and personal tasting notes, with an Edit and Delete option.
+ 
 
-#### Remember that creating a project board, issues, and milestones is 50% of your grade!     
-If you are having trouble, contact your instructor ASAP, you might need to be part of the ePortoflio group to have better access.
-
-
-
+#### Page #5   
+- Profile  
+- Purpose: Shows the user's info and quick stats about their coffee journey, with a form to edit their profile, and the option to switch between dark/light mode. 
 
 <br>
 
