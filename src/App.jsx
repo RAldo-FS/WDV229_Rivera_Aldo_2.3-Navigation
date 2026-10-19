@@ -53,7 +53,7 @@ function App() {
           <Routes>
             <Route path = "/" element = {<Dashboard coffees = {coffees} onAddCoffee = {addCoffee} />} />
             <Route path = "/overview" element = {<Overview coffees = {coffees} />} />
-            <Route path = "/search" element = {<Search />} />
+            <Route path="/search" element={<Search coffees={coffees} onAddCoffee={addCoffee} />} />
             <Route path = "/tasting-notes" element = {<TastingNotes />} />
             <Route path = "/profile" element = {<Profile />} />
           </Routes>
