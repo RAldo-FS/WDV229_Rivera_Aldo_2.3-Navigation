@@ -10,7 +10,7 @@
 📪 &nbsp; arrivera@student.fullsail.edu
 
 
-![Web Development - B.S. - Online](https://www.fullsail.edu/degrees/web-development-bachelor)
+[Web Development - B.S. - Online](https://www.fullsail.edu/degrees/web-development-bachelor)
 <br>
 ![Project and Portfolio II: Web Development - Online](https://img.shields.io/badge/Class-Project%20and%20Portfolio%20II-orange?logo=react)
 
@@ -73,43 +73,53 @@ Please discuss the following:
 
 #### Page #5   
 - Profile  
-- Purpose: Shows the user's info and quick stats about their coffee journey, with a form to edit their profile, and the option to switch between dark/light mode. 
+- Purpose: Shows the user's info and quick stats about their coffee journey, with a form to edit their profile. Dark/light mode is planned for Milestone 4.
 
 <br>
 
 ### Milestone 3
-⚙️ Overview - Write overview here.
+⚙️ Overview - For week 3 work, I turned Milestone 2 navigation into a functional app. Users are able to add coffee entries with a star rating, get "Try Something New" suggestions from the SampleAPIs Coffee API. Search drinks by name or ingredient (try searching "milk" =). Users can also rate, edit, and delete coffee entries on the Tasting Notes page, save their profile in the Profile page. Coffee entries and the profile are saved with localStorage. 
 <br>
-🌵 Challenges - Write challenges here.
+🌵 Challenges - In week 2 I ran into time constraints due to personal/work matters. In week 3, I did not allocate enough time to finish before the due date, my apologies. Most of my bugs came from props. As I wrote code into any file, I sometimes left out the props in the function line, or just forgot to pass them from the App.jsx file, which caused undefined message errors. So I learned to double check both, the prop has to be sent in App.jsx and received by the page's function. I continue to run commands from the wrong terminal directory/folder, so I've made some terminal commands a habit. 
 <br>
-🏆 Accomplishments - Write Accomplishments here.
+🏆 Accomplishments - I'v improved on lifting state up to App.jsx and passing callback props like: addCoffee, editCoffee, deleteCoffee; And using useParams to build a detail page from the URL. Had more practice pulling in JSON data with fetch, .then, and .catch, plus saving data to localStorage. I used familiar array logic using forEach, filter, push, and indexOf.  
 <br>
-🔮 Next Steps - Write your next steps here.
+🔮 Next Steps - Move onto Milestone 4 with some styling changes I'd like to make, but make instructor recommended changes as well. I still have placeholder images, work on spacing in some pages, and begin working on my overview video. 
 
 <br>
 
 Please discuss the following:
 #### API    
-- Link to the API that is used in your code    
-- Reason you chose the API    
-- Where in your code did you use it?    
+- Link to the API that is used in your code [SampleAPIs Coffee API](https://sampleapis.com/api-list/coffee)    
+- Reason you chose the API: It's a free API so great for learning. Didn't require API key, and returns simple JSON data with titles, descriptions, ingredients, and images, which fit my application search and recommendation features.
+- Where in your code did you use it?
+    - Dashboard.jsx: line 7 (myApiUrl) and line 18 (fetch), for the "Try Something New" suggestions.
+    - Search.jsx: line 5 (myApiUrl) and line 21 (fetch), for The Bean Finder search page.
 
 #### 1st Library
-- Link to the library    
-- Link to library tutorial that you made already.    
-- Reason you chose this library.    
-- Where in your code is it used?    
+- Link to the library: [React Simple Star Rating](https://www.npmjs.com/package/react-simple-star-rating)  
+- Link to library tutorial that you made already: [My React Simple Star Rating Library tutorial](https://fullsailedu-my.sharepoint.com/:v:/g/personal/arrivera_student_fullsail_edu/IQCUTw1qexQOSLUQGjLfJubEAfQs9YrKRe0OSxuuPwaIFnE?e=eA6FJs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)    
+- Reason you chose this library: Rating each coffee is a core feature of my coffee journal. It gives clickable and read only stars with one component and a few props, and it has zero dependencies.
+- Where in your code is it used?
+    - AddCoffeeForm.jsx: line 3 (import) and line 54 (clickable stars when logging a new coffee)
+    - CoffeeCard.jsx: line 3 (import) and line 21 (read only stars on each Dashboard card)
+    - TastingNotes.jsx: line 4 (import) and line 90 (clickable stars to update a coffee's rating)
 
 #### 2nd Library    
-- Link to the library    
-- Reason you chose this library.    
-- Where in your code is it used?    
+- Link to the library: [React Icons](https://react-icons.github.io/react-icons/)
+- Reason you chose this library: For plug and play simplicity. Setting react icons is fast without much configuration.    
+- Where in your code is it used?
+    - CoffeeCard.jsx: line 4 (import) and line 15 (coffee bean icon on each Dashboard card)
+    - TastingNotes.jsx: line 5 (import) and line 152 (coffee bean icon in the round image)
+    - Profile.jsx: line 3 (import) and line 81 (profile picture icon)
 
 #### Persistent Data    
-- Discuss if you have used MongoDB or Local Storage.    
-- How was it used in your code?    
-- Where in your code is it used?    
-
+- Discuss if you have used MongoDB or Local Storage: I used localStorage.   
+- How was it used in your code?
+    - My coffee list and my profile are saved in the browser. On load, "localStorage.getItem()" reads the saved data, and then "JSON.parse()" turns it back into an array or object. If nothing is saved yet (like on a new browser), the app uses sample data instead so it never assumes localStorage already exists. Every time the data changes, a "useEffect" saves it with "localStorage.setItem()" and "JSON.stringify()", since localStorage only stores text.
+- Where in your code is it used?
+    - App.jsx: line 20 (load the coffee list) and line 33 (save the coffee list). Sample coffees for a first visit are in "src/data/starterCoffees.js".
+    - Profile.jsx: line 18 (load the profile) and line 28 (save the profile)    
 
 
 

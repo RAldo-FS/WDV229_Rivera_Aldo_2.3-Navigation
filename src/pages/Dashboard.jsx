@@ -4,7 +4,7 @@ import CoffeeCard from '../components/CoffeeCard.jsx'
 import AddCoffeeForm from '../components/AddCoffeeForm.jsx'
 
 // SampleAPIs Coffee API (from my Week 1 research). Im milestone 2, I had manual entries just for presentation. For milestone 3 we now have real API data coming in for localStorage.
-const API_URL = 'https://api.sampleapis.com/coffee/hot'
+const myApiUrl = 'https://api.sampleapis.com/coffee/hot'
 
 function Dashboard({ coffees, onAddCoffee }) {
   // Variables for coffee drinks from the API, plus loading and error messages for our ".catch()"
@@ -15,7 +15,7 @@ function Dashboard({ coffees, onAddCoffee }) {
   // Fetch our API data once, when the Dashboard first loads ([] = run once)
   useEffect(() => {
     // fetch() asks the API for data. It takes a moment, so we wait for each step with .then()
-    fetch(API_URL)
+    fetch(myApiUrl)
       // Step 1: the API sends back text. .json() turns that text into a JavaScript array
       .then((response) => response.json())
       // Step 2: Now save the array of coffee drinks in state
@@ -46,7 +46,6 @@ function Dashboard({ coffees, onAddCoffee }) {
   // This function is responsible for turning an API drink into a journal entry.   
   const addSuggestion = (drink) => {
     onAddCoffee({
-      id: Date.now(), // current time in milliseconds returns a different id every time
       name: drink.title,
       method: 'Café drink',
       rating: 0,

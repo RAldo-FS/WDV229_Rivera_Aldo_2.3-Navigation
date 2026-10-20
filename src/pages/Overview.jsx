@@ -16,10 +16,10 @@ function Overview({ coffees }) {
     }
   })
 
-  // averageRating is total divided by how many were rated.
+  // Average = total ÷ how many coffees were rated. Math.round() rounds it to the nearest whole star.
   let averageRating = 'N/A'
   if (ratedCount > 0) {
-    averageRating = Math.round((ratingTotal / ratedCount) * 10) / 10
+  averageRating = Math.round(ratingTotal / ratedCount)
   }
 
   return (

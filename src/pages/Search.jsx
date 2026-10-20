@@ -5,7 +5,7 @@ import { Box, Button, Flex, Image, Input, Spinner, Stack, Text } from '@chakra-u
 const myApiUrl = 'https://api.sampleapis.com/coffee/hot'
 
 // My coffee drinks in this search page come from the API. Then they get added to journal. 
-// The two arguments "coffee" and "onAddCoffee" come from my App, same as Dashboard.
+// The two props "coffees" and "onAddCoffee" come from my App, same as Dashboard.
 function Search({coffees, onAddCoffee}) {
   // Variables for coffee drinks from the API, plus loading and error messages for our ".catch()"
   const [apiCoffees, setApiCoffees] = useState([])
@@ -15,7 +15,7 @@ function Search({coffees, onAddCoffee}) {
   // Here I'm adding what the user types in the search bar, and storing it in state.
   const [searchTerm, setSearchTerm] = useState('')
   
-  // Fetch our API data once, when the Dashboard first loads ([] = run once)
+    // Fetch our API data once, when the Search page first loads ([] = run once)
     useEffect(() => {
       // fetch() asks the API for data. It takes a moment, so we wait for each step with .then()
       fetch(myApiUrl)
@@ -42,7 +42,7 @@ function Search({coffees, onAddCoffee}) {
     apiCoffees.forEach((drink) => {
       if (!drink.title) return // If NotDrinkName, skip it.
       
-      // Here, indexOf 
+      // Here, indexOf gives "-1" when the text is NOT found, so anything other than -1 means a match
       let isMatch = drink.title.toLowerCase().indexOf(term) !== -1
 
       // I also need to check each ingredient (milk, espresso...)
@@ -68,7 +68,6 @@ function Search({coffees, onAddCoffee}) {
     // We're turning an API drink into a journal entry and sending it to our App.jsx
     const addDrink = (drink) => {
       onAddCoffee({
-        id: Date.now(), // current time in milliseconds is a different id every time
         name: drink.title,
         method: 'Café drink',
         rating: 0,

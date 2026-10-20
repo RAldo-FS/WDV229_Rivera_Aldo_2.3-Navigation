@@ -25,9 +25,8 @@ function AddCoffeeForm({ onAddCoffee }) {
     if (name === '') return 
 
     onAddCoffee({
-      id: Date.now(), // Date.now() method is the current time in milliseconds, so every coffee gets a different id
       name: name,
-      method: method || 'Pour-over', // If method is empty, use 'Pour-over' instead"
+      method: method || 'Pour-over', // If method is empty, use 'Pour-over' instead.
       rating: rating,
       notes: notes,
     })
