@@ -143,6 +143,7 @@ Please discuss the following:
 - Fixed the favicon path in index.html ("/coffee_bean.svg" instead of "/public/coffee_bean.svg"), which removed a Vite warning.
 - Removed extra package files that were accidentally created outside my project folder.
 - Tried adding dark/light mode with Chakra UI's color mode snippet, but it caused console errors, so I removed it for now.
+- Added spacing below my overview card. 
 
 
 #### Styling

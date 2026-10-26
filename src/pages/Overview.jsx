@@ -25,7 +25,7 @@ function Overview({ coffees }) {
   return (
     <Box maxW = "800px">
       {/* About the app */}
-      <Box bg = "white" borderRadius = "lg" boxShadow = "sm" p = {6} maxW ="800px" color = "gray.800">
+      <Box bg = "white" borderRadius = "lg" boxShadow = "sm" p = {6} maxW ="800px" color = "gray.800" mb = {6}>
         <Heading size = "md" mb = {3} color = "brand.black">☕ Bean Journal</Heading>
         <Text mb = {4}>
           <strong>Purpose:</strong> A super minimal, personal coffee logging application built for coffee enthusiasts to track, rate, and refine their daily brewing parameters and tasting notes.
