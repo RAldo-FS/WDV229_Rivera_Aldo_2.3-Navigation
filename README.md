@@ -154,7 +154,7 @@ Please discuss the following:
 - I used React Icons for the coffee bean and profile icons, and React Simple Star Rating for the star ratings.
 
 #### Link To Overview Video
-- Once it is created, put the link to your overview video of your site here.
+- [Coffee Bean Journal – Final Presentation Video](https://fullsailedu-my.sharepoint.com/:v:/g/personal/arrivera_student_fullsail_edu/IQCyWFaXO6IxRpE4ur39hU-bAY0YHLwnECoXfciPqXsxvxY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=z4fgk2)
 
 <br>
 <br>
