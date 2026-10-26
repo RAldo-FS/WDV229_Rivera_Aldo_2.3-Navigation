@@ -73,7 +73,7 @@ Please discuss the following:
 
 #### Page #5   
 - Profile  
-- Purpose: Shows the user's info and quick stats about their coffee journey, with a form to edit their profile. Dark/light mode is planned for Milestone 4.
+- Purpose: Shows the user's info and quick stats about their coffee journey, with a form to edit their profile. Dark/light mode was planned for Milestone 4. 
 
 <br>
 
@@ -126,22 +126,31 @@ Please discuss the following:
 <br>
 
 ### Milestone 4
-⚙️ Overview - Write overview here.
+⚙️ Overview - For the final week I focused on fixing issues and cleaning up my project. My instructor couldn't open my Milestone 3 project because react-icons wasn't listed in my package.json, so I fixed that, tested it with a fresh clone, and pushed the update. I also fixed a favicon warning and removed files I didn't need.
 <br>
-🌵 Challenges - Write challenges here.
+🌵 Challenges - I ran out of time to add dark/light mode as intended, so I plan to add this as a future update once I free up some time.
 <br>
-🏆 Accomplishments - Write Accomplishments here.
+🏆 Accomplishments - I learned how to test my project the way anyone sees it, by cloning my branch into a new folder and running npm install. My project now runs with no errors or warnings from a fresh copy.
 <br>
-🔮 Next Steps - Write your next steps here.
+🔮 Next Steps - Add dark/light mode, replace my placeholder images with real coffee photos, and keep improving the spacing and layout to better match my Figma design.
 
 <br>
 
 Please discuss the following:  
 #### Changes
-- Discuss any changes or updates that you have made to your site since Milestone #3.
+- Discuss any changes or updates that you have made to your site since Milestone #3:
+- Fixed the missing react-icons dependency in package.json, so the project installs and runs correctly on any computer.
+- Fixed the favicon path in index.html ("/coffee_bean.svg" instead of "/public/coffee_bean.svg"), which removed a Vite warning.
+- Removed extra package files that were accidentally created outside my project folder.
+- Tried adding dark/light mode with Chakra UI's color mode snippet, but it caused console errors, so I removed it for now.
+
 
 #### Styling
-- Discuss the process you used to style your page.
+- Discuss the process you used to style your page:
+- I started with my Figma prototype, which uses the Simple Design System layout, and built each page to match it.
+- I used Chakra UI style props (like bg, p, and borderRadius) to style my components, which is a CSS-in-JS approach.
+- My colors come from my "Mocha Latte" palette on coolors.co. I saved them as custom color tokens in theme.js (brand.taupe, brand.jet, brand.smoke, brand.brown), so I can change a color in one place and it updates the whole app.
+- I used React Icons for the coffee bean and profile icons, and React Simple Star Rating for the star ratings.
 
 #### Link To Overview Video
 - Once it is created, put the link to your overview video of your site here.
