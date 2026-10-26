@@ -148,7 +148,7 @@ Please discuss the following:
 #### Styling
 - Discuss the process you used to style your page:
 - I started with my Figma prototype, which uses the Simple Design System layout, and built each page to match it.
-- I used Chakra UI style props (like bg, p, and borderRadius) to style my components, which is a CSS-in-JS approach.
+- I used Chakra UI style props (like bg, p, and borderRadius) to style my components, which is a CSS-in-JS approach. I chose Chakra UI because styling with props right in my JSX felt easier than switching between separate CSS files.
 - My colors come from my "Mocha Latte" palette on coolors.co. I saved them as custom color tokens in theme.js (brand.taupe, brand.jet, brand.smoke, brand.brown), so I can change a color in one place and it updates the whole app.
 - I used React Icons for the coffee bean and profile icons, and React Simple Star Rating for the star ratings.
 
